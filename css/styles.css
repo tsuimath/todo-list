@@ -5,6 +5,10 @@ body {
     overflow: hidden
 }
 
+a {
+    -webkit-touch-callout: none;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
 }
