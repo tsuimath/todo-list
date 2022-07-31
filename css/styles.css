@@ -100,7 +100,8 @@ button {
     transition: 0.3s;
 }
 
-.delete:hover {
+.delete:hover,
+.delete:focus {
     color: #ee6969;
 }
 
