@@ -1,0 +1,172 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #FFF;
+    background-color: #0d0d0d;
+}
+
+.todo-list { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.scroll {
+    overflow-y: scroll;
+    height: 250px;
+}
+
+.list {
+    position: relative;
+    max-width: 400px;
+    min-height: 350px;
+    width: 100%;
+    background-color: #1C1727;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+table {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    color: #FFF;
+    font-weight: bold;
+}
+
+input:focus-visible {
+    outline: unset;
+}
+
+button:focus-visible {
+    outline: unset;
+}
+
+button {
+    position: absolute;
+    color: #FFF;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50px;
+    background-color: #8569EE;
+    padding: 4px 15px;
+    font-size: 35px;
+}
+
+.task-counter {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.task-counter small {
+    color: #8569EE;
+    margin-left: 4px;
+}
+
+.delete {
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.delete:hover {
+    color: #ee6969;
+}
+
+tbody tr.tasks {
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+tbody td {
+    display: flex;
+    align-items: center;
+}
+
+tbody td.task {
+    max-width: 85%;
+    width: 100%;
+}
+
+input[type="checkbox"]:checked ~ input[type="text"]{
+    text-decoration: line-through;
+    color: #66647B;
+}
+
+/* Customize the label (the container) */
+.checkbox {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding-left: 25px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+  /* Hide the browser's default checkbox */
+.checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+  /* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 2px;
+    background-color: #1C1727;
+}
+
+.checkmark:not(input:checked) {
+    border: 0.5px solid #66647B;
+}
+  
+  /* On mouse-over, add a grey background color */
+.checkbox:hover input[type="checkbox"] ~ .checkmark {
+    background-color: #1C1727;
+}
+  
+  /* When the checkbox is checked, add a blue background */
+.checkbox input[type="checkbox"]:checked ~ .checkmark {
+    background-color: #8569EE;
+}
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+  /* Show the checkmark when checked */
+.checkbox input[type="checkbox"]:checked ~ .checkmark:after {
+    display: block;
+}
+  
+  /* Style the checkmark/indicator */
+.checkbox .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #1C1727;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
