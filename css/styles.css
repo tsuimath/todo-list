@@ -4,16 +4,31 @@ body {
     background-color: #0d0d0d;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #0d0d0d; 
+    transition: 0.3s;
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #8569EE; 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #6c4be3; 
+}
+
 .todo-list { 
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
-}
-
-.scroll {
-    overflow-y: scroll;
-    height: 250px;
 }
 
 .list {
@@ -22,8 +37,14 @@ body {
     min-height: 350px;
     width: 100%;
     background-color: #1C1727;
-    padding: 20px;
+    padding: 20px 10px 20px 20px;
     border-radius: 25px;
+}
+
+.scroll {
+    overflow-y: scroll;
+    height: 250px;
+    padding: 0 10px 0 0;
 }
 
 table {
@@ -45,6 +66,11 @@ button:focus-visible {
     outline: unset;
 }
 
+button:hover {
+    background: #6c4be3; 
+    transition: 0.3s;
+}
+
 button {
     position: absolute;
     color: #FFF;
@@ -54,6 +80,7 @@ button {
     background-color: #8569EE;
     padding: 4px 15px;
     font-size: 35px;
+    font-family: monospace;
 }
 
 .task-counter {
