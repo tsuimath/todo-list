@@ -123,6 +123,7 @@ tbody td.task {
 
 input[type="checkbox"]:checked ~ input[type="text"]{
     text-decoration: line-through;
+    -webkit-text-decoration-line: line-through;
     color: #66647B;
 }
 
