@@ -1,7 +1,6 @@
 function ToDoList(task) {
     var self = this;
     this.task = ko.observable(task)
-
 }
 
 function ToDoListViewModel() {
