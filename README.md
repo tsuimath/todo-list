@@ -1,5 +1,5 @@
 # Todo List
-Todo list with basic functionalities for KnockoutJS study purposes
+Todo list with basic functionalities for KnockoutJS and LocalStorage study purposes
 
 ---
 

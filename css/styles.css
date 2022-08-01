@@ -126,7 +126,7 @@ tbody td.task {
     width: 100%;
 }
 
-input[type="checkbox"]:checked ~ input[type="text"]{
+.isCompleted {
     text-decoration: line-through;
     -webkit-text-decoration-line: line-through;
     color: #66647B;
