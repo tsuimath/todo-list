@@ -32,10 +32,12 @@ a {
 .header {
     display: flex;
     justify-content: space-between;
+    padding: 0 3px;
 }
 
 .date {
     font-size: 14px;
+    font-weight: bold;
     letter-spacing: -0.8px;
     color: #FFF;
 }
@@ -73,6 +75,7 @@ input {
     color: #FFF;
     font-size: 14px;
     font-weight: 400;
+    letter-spacing: 0.4px;
 }
 
 input:focus-visible {
