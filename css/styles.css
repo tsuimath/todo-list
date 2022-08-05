@@ -29,6 +29,17 @@ a {
     background: #6c4be3; 
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date {
+    font-size: 14px;
+    letter-spacing: -0.8px;
+    color: #FFF;
+}
+
 .todo-list { 
     display: flex;
     justify-content: center;
@@ -60,7 +71,8 @@ input {
     width: 100%;
     background: transparent;
     color: #FFF;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 input:focus-visible {
@@ -71,12 +83,12 @@ button:focus-visible {
     outline: unset;
 }
 
-button:hover {
+.todo-list button:hover {
     background: #6c4be3; 
     transition: 0.3s;
 }
 
-button {
+.todo-list button {
     position: absolute;
     color: #FFF;
     right: 20px;
@@ -86,6 +98,10 @@ button {
     padding: 4px 15px;
     font-size: 35px;
     font-family: monospace;
+}
+
+.initial-message {
+    font-weight: 400;
 }
 
 .task-counter {
@@ -107,6 +123,35 @@ button {
 .delete:hover,
 .delete:focus {
     color: #ee6969;
+}
+
+.change-theme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.theme {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin: 0 20px;
+}
+
+.yellow-theme {
+    background-color: #f5deb3;
+    border: solid 1px #FFF;
+}
+
+.white-theme {
+    background-color: #FFF;
+    border: solid 1px #f5deb3;
+}
+
+.black-theme {
+    background-color: #1C1727;
+    border: solid 1px #FFF;
 }
 
 tbody tr.tasks {

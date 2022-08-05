@@ -95,6 +95,28 @@ function ToDoListViewModel() {
     })
     
     document.addEventListener('keydown', addTaskOnKeyboard) 
+
+    self.getDate = function() {
+        var today = new Date();
+        var date = today.getFullYear()+' / '+(today.getMonth()+1)+' / '+today.getDate();
+
+        return date
+    }
+
+    self.setThemeYellow = function() {
+        let background = document.body
+        background.style.background = "#f5deb3"
+    }
+
+    self.setThemeWhite = function() {
+        let background = document.body
+        background.style.background = "#FFF"
+    }
+
+    self.setThemeBlack = function() {
+        let background = document.body
+        background.style.background = "#0d0d0d"
+    }
 }
 
 ko.applyBindings(new ToDoListViewModel())
